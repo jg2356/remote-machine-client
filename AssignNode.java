@@ -1,19 +1,18 @@
 public class AssignNode implements Node {
-
-    String id;
-    Node node;
+    private String id;
+    private Node value;
 
     public AssignNode(String id, Node node) {
         this.id = id;
-        this.node = node;
+        this.value = node;
     }
 
     public String id() {
         return id;
     }
     
-    public Node node() {
-        return node;
+    public Node value() {
+        return value;
     }
 
     public <T> T accept(Visitor<T> visitor) {

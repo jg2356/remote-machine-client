@@ -1,6 +1,5 @@
 public class VarNode implements Node {
-
-    String id;
+    private String id;
 
     public VarNode(String id) {
         this.id = id;

@@ -1,8 +1,7 @@
 import java.util.ArrayList;
 
 public class ProgNode implements Node {
-
-    ArrayList<Node> children;
+    private ArrayList<Node> children;
 
     public ProgNode() {
         children = new ArrayList<Node>();

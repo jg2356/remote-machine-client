@@ -1,7 +1,6 @@
 public class BinopNode implements Node {
-
-    Node left, right;
-    char op;
+    private Node left, right;
+    private char op;
 
     public BinopNode(char op, Node left, Node right) {
         this.op = op;

@@ -1,13 +1,12 @@
 public class DoubleNode implements Node {
-
-    Double val;
+    private Double value;
 
     public DoubleNode(Double val) {
-        this.val = val;
+        this.value = val;
     }
 
-    public Double val() {
-        return val;
+    public Double value() {
+        return value;
     }
 
     public <T> T accept(Visitor<T> visitor) {
