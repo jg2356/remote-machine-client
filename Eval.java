@@ -29,7 +29,9 @@ public class Eval {
         String url = args.length == 0
         		? "http://localhost:3000/visit"
         	    : args[0];
-        System.out.println(executePost(url, jsonRootAST));
+
+        System.out.println("SEND:\r\n" + url + "\r\n" + jsonRootAST + "\r\n");
+        System.out.println("RCVD:\r\n" + executePost(url, jsonRootAST));
     }
 
     public static String executePost(String targetURL, String jsonBody)
